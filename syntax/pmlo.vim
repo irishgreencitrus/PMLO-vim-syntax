@@ -6,7 +6,7 @@ if exists("b:current_syntax")
 		finish
 endif
 
-syntax match pmloComment "\@.*"
+syntax region pmloComment start="@" end="$"
 syntax match pmloNumbers "\d+"
 syntax match pmloRange "\d+\.\.\d+"
 syntax match pmloLabel "(?<=::)[A-Z_]+"
