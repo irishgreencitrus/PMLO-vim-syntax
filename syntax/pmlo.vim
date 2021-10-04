@@ -18,7 +18,7 @@ syntax region pmloString start=/\v"/ end=/\v"/
 
 highlight default link pmloComment Comment
 highlight default link pmloNumbers Constant
-highlight default link pmloRange Keyword
+highlight default link pmloRange Constant
 highlight default link pmloLabel Label
 highlight default link pmloLabelFunction Label
 highlight default link pmloRegisterFunction Identifier
