@@ -7,12 +7,12 @@ if exists("b:current_syntax")
 endif
 
 syntax region pmloComment start="@" end="$"
-syntax match pmloNumbers "\v<\d+>"
+syntax match pmloNumbers "\d\+"
 syntax match pmloRange "\d\+\.\.\d\+"
 syntax match pmloLabel "::[A-Z_]\+"
 syntax match pmloLabelFunction "[a-z_]\+:[A-Z_]\+"
-syntax match pmloRegisterFunction "[a-z_]\+<[a-z]>"
-syntax match pmloStackFunction "[a-z_]\+<[0-9]\+>"
+syntax match pmloRegisterFunction "[a-z_]\+([a-z])"
+syntax match pmloStackFunction "[a-z_]\+([0-9]\+)"
 syntax match pmloScope /[[\]]/
 syntax region pmloString start=/\v"/ end=/\v"/
 
